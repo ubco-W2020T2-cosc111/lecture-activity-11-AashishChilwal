@@ -8,9 +8,9 @@ public class Main
 		for (c = 20.0, f = 50.0; 
 			  c <= 29.0; c++, f += 5) {
 			System.out.printf("%.2f",c);
-            System.out.printf("%.2f",toFahrenheit(c));
-            System.out.printf("%.2f",f);
-            System.out.printf("%.2f\n",toCelsius(f));
+            System.out.printf("       %.2f",toFahrenheit(c));
+            System.out.printf("               %.2f",f);
+            System.out.printf("          %.2f\n",toCelsius(f));
 		}
 	}
 		public static double toFahrenheit(double celsius) {
