@@ -22,18 +22,21 @@ public class task4 {
             }
             else 
             {
-            }
-        if ((password.charAt(i) >= 48 && password.charAt(i) <= 57) && (password.charAt(i) >= 97 && password.charAt(i) <= 122))
+            }}
+        for(int i = 0;i<password.length();i++){
+        if (Character.isLetterOrDigit(password.charAt(i)))
         {
-            if (number== 0) {
+
             lettandnum = true;
-            }
+
         }
         else{
             lettandnum = false;
         }
         }
-          return lettandnum;
+	      if (lettandnum==true &&(number>=2&&password.length()>=length))
+                return lettandnum = true;
+          else
+                return lettandnum = false;
 	}
 }
-
